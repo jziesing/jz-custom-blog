@@ -2,7 +2,7 @@ var path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-    entry: path.resolve(__dirname, "./client/src/client.js"),
+    entry: path.resolve(__dirname, "./Client/src/client.js"),
     module: {
       rules: [
         {
@@ -16,7 +16,7 @@ module.exports = {
       extensions: ['*', '.js', '.jsx'],
     },
     output: {
-      path: path.resolve(__dirname, './client/build'),
+      path: path.resolve(__dirname, './Client/build'),
       filename: 'bundle.js',
     }
 }
